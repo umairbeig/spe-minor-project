@@ -3,7 +3,7 @@
   hosts: all
   remote_user: root
   tasks:
-    - name: Installing java8 package
+    - name: Installing java11 package
       apt:
         name: openjdk-11-jdk
         state: present
