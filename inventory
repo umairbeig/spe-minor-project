@@ -1,3 +1,2 @@
-localhost ansible_sudo_pass: umairbeig ansible_ssh_pass: umairbeig
-127.0.1.1 ansible_user:ansible1 ansible_sudo_pass: umairbeig ansible_ssh_pass: umairbeig 
-127.0.0.1 ansible_user:ansible1 ansible_sudo_pass: umairbeig ansible_ssh_pass: umairbeig
+
+127.0.0.1 ansible_user=ansible1 ansible_sudo_pass=umairbeig ansible_ssh_pass=umairbeig
