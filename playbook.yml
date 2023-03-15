@@ -9,6 +9,6 @@
         state: present
     - name: pull docker image
       docker_image:
-      name: umairbeig/junit-devops
-      source: pull
+        name: umairbeig/junit-devops
+        source: pull
       
