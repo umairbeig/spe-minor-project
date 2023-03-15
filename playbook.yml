@@ -3,12 +3,8 @@
   hosts: all
 #   remote_user: root
   tasks:
-#     - name: Installing java11 package
-#       apt:
-#         name: openjdk-11-jdk
-#         state: present
     - name: pull docker image
       docker_image:
-        name: umairbeig/junit-devops
+        name: umairbeig/junit-devops:latest
         source: pull
       
