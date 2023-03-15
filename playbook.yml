@@ -1,7 +1,7 @@
 name: Pull docker image
   hosts: all
   tasks:
-    - name: Pull Image
+      name: Pull Image
       docker_image:
         name: umairbeig/junit-devops
         source: pull
