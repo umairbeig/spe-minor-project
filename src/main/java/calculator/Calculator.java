@@ -26,7 +26,7 @@ public class Calculator {
             try {
                 choice = scanner.nextInt();
             } catch (InputMismatchException error) {
-                System.out.println("Thank you for using the calculator");
+                System.out.println("closing");
                 return;
             }
 
@@ -41,9 +41,10 @@ public class Calculator {
                         logger.error("Invalid input, Entered input is not a number");
                         return;
                     }
-                    System.out.println("================================================");
+                    System.out.println("************************************************");
                     System.out.println("Square root is: " + calculator.squareRoot(num));
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
+
                     break;
                 case 2:
                     try {
@@ -53,9 +54,11 @@ public class Calculator {
                         logger.error("Invalid input, Entered input is not a number");
                         return;
                     }
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
+
                     System.out.println("Factorial of a number is : " + calculator.factorial(num1));
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
+
                     break;
                 case 3:
                     try {
@@ -65,9 +68,10 @@ public class Calculator {
                         logger.error("Invalid input, Entered input is not a number");
                         return;
                     }
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
                     System.out.println("Natural log is : " + calculator.naturalLog(num));
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
+
                     break;
                 case 4:
                     double num2;
@@ -80,12 +84,14 @@ public class Calculator {
                         logger.error("Invalid input, Entered input is not a number");
                         return;
                     }
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
+
                     System.out.println("Power result is : " + calculator.power(num, num2));
-                    System.out.println("================================================");
+                      System.out.println("************************************************");
+
                     break;
                 default:
-                    System.out.println("Thank you for using the calculator");
+                    System.out.println("closing");
                     return;
             }
         } while (true);
