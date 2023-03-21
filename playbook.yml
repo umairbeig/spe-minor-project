@@ -2,11 +2,21 @@
 - name: Deploy a jar file
   hosts: all
   vars:
-#      ansible_python_interpreter: /usr/bin/python3
-#   remote_user: root
+
   tasks:
     - name: pull docker image
       docker_image:
         name: umairbeig/junit-devops:latest
         source: pull
+
+    - name: make a container
+      docker_container:
+         name: containerxxx
+         image: umairbeig/junit-devops:latest
+         state: present
+         tty: true
+         interactive: true
+
+
+
       
