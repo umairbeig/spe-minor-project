@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    private static final Logger logger = LogManager.getLogger(Calculator.class);
+    private static final Logger logger = LogManager.getLogger(Calculator.class.getName());
 
     public Calculator(){
 
