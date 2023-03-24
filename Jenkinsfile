@@ -33,7 +33,7 @@ pipeline {
                 
             }
         }
-         stage(' ansible deploy jar') {
+         stage(' ansible  deploy jar') {
             steps {
               ansiblePlaybook becomeUser: null, colorized: true, installation: 'ansible', inventory: 'inventory', playbook: 'playbook.yml', sudoUser: null
             }
